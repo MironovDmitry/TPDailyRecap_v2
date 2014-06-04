@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TargetProcess Daily Recap</title>
+    <style type="text/css">
+        body {
+            font-size: 12pt;
+            font-family: Helvetica,Arial,sans-serif;
+        }
+
+        table {
+            /*border: 1px solid black;*/
+            border: none;
+            border-collapse: collapse;
+            border-spacing: 0px;
+            padding: 0px;
+        }
+
+        /*table td {
+            border-collapse: collapse;
+        }*/
+
+        td[class="reportDate"] {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        table[class="reportHeader"] {
+            text-align: center;
+        }
+
+        td[class="sectionLeftMargin"] {
+            width: 10px;
+        }
+
+        td[class="section"] {
+            color: #AA9C84;
+            font-weight: bold;
+            font-size: 12pt;
+            padding-bottom: 5px;
+            text-align: left;
+            width: 584px;
+        }
+
+        td[class="projectManager"] {
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        td[class="EntityRecordName"] {
+            /*font-size: 14pt;*/
+            font-weight: bold;
+        }
+
+        td[class="EntityDeveloperAndEffort"] {
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <table class="tblReport" width="600" align="center" border="1">
+        <tr class="header">
+            <td>
+                <table class="reportHeader" width="596">
+                    <tr>
+                        <td class="Title" style="font-size:20pt;font-weight:bold;">
+                            TP Daily Recap
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reportDate">
+                            ##ReportDate##
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="report">
+            <td>
+                <table class="ProjectsContainer" width="596">
+                    <tr>
+                        <td>
+                            <table class="tblProject" width="594" style="border-bottom:1px solid black;">
+                                <tr>
+                                    <td class="projectName" colspan="3" style="font-size:14pt;font-weight:bold;">
+                                        ##ProjectName##
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="projectManager" colspan="3" style="font-style:italic;">
+                                        (Менеджер проекта: ##ProjectOwner##)
+                                    </td>
+                                </tr>
+                                <tr class="sectionRow">
+                                    <td class="sectionLeftMargin">&nbsp;</td>
+                                    <td class="section" colspan="2">
+                                        ##SectionName##
+                                    </td>
+                                </tr>
+                                <tr class="entityRow">
+                                    <td class="sectionLeftMargin">&nbsp;</td>
+                                    <td class="sectionLeftMargin">&nbsp;</td>
+                                    <td class="EntityTypeAndName">
+                                        <table width="570" style="border:none;">
+                                            <tr>
+                                                <td class="entitytypeimage" width="40">
+                                                    <img alt="EntityTypeImage" src="http://img.aemedia.ru/tp/##EntityType##.gif" width="##ImageWidth##" height="12">
+                                                </td>
+                                                <td class="EntityRecordName" colspan="2">
+                                                    ##EntityName##
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40">&nbsp;</td>
+                                                <td width="52" valign="middle">
+                                                    <table class="ProgressBar" border="1" width="50" cellpadding="0" cellspacing="0" style="border-color:#728397; text-align:left;" height="6">
+                                                        <tr>
+                                                            <td valign="middle">
+                                                                <table cellpadding="0" cellspacing="0" ##progressbgcolorandwidth##>
+                                                                    <tr>
+                                                                        <td height="6" style="font-size: 6px; line-height: 6px;">&nbsp;</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="EntityDeveloperAndEffort" width="475" valign="middle">
+                                                    ##EntityDeveloperAndEffort## &nbsp; <img alt="UserAvatar" src="https://targetprocess.aemedia.ru/TargetProcess2/avatar.ashx?UserId=##AssignedUserID##" width="20" height="20">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40">&nbsp;</td>
+                                                <td colspan="2">
+                                                    ##EntityDescriptrion##
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" height="5" style="font-size: 5px; line-height: 5px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table> <!-- report footer-->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
