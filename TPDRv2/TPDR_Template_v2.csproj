@@ -57,7 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Developer_Footer.html" />
+    <Content Include="Developer_Header.html" />
+    <Content Include="Entities_Footer.html" />
+    <Content Include="Entities_Header.html" />
     <Content Include="Entity_Record.html" />
+    <Content Include="Entity_Record_Planned.html" />
     <Content Include="Feature_Footer.html" />
     <Content Include="Feature_Header.html" />
     <Content Include="Full_FixedSize.html" />

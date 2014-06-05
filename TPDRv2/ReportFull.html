@@ -3,9 +3,9 @@
 <head>
     <title></title>
     <style type="text/css">
-        table{
-            border:1px solid black;
-            border-collapse:collapse;
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -49,22 +49,70 @@
                                 <!-- Section end -->
                                 <tr class="Entities">
                                     <td class="entities">
-                                        <!-- Entity record start -->
-                                        <table class="tblEntityFull" width="588">
+                                        <!-- Entity short Start -->
+                                        <table width="100%" border="1">
                                             <tr>
-                                                <td>
-                                                    ##FeatureName##
+                                                <td class="entitytypeimage" width="40" style="width:40px;">
+                                                    <a href="https://targetprocess.aemedia.ru/TargetProcess2/RestUI/Board.aspx?acid=##acid###page=##EntityType##/##entityID##"><img alt="EntityTypeImage" src="http://img.aemedia.ru/tp/##EntityType##.gif" height="12"></a>
                                                 </td>
-                                            </tr>
-                                            <tr class="entity">
+                                                <td class="entityID" width="50" style="width:50px">
+                                                    ##EntityID##
+                                                </td>
                                                 <td>
                                                     ##EntityName##
                                                 </td>
                                             </tr>
                                         </table>
-                                        <!-- Entity record end -->
+                                        <!-- Entity short End -->
+                                        <!-- Entity with Feature start -->
+                                        <table class="tblEntityFull" width="588" border="1">
+                                            <tr>                                                                                               
+                                                <td class="entitytypeimage" width="40" style="width:40px;">
+                                                    <a href="https://targetprocess.aemedia.ru/TargetProcess2/RestUI/Board.aspx?acid=##acid###page=##EntityType##/##entityID##"><img alt="EntityTypeImage" src="http://img.aemedia.ru/tp/##EntityType##.gif" height="12"></a>                                                
+                                                </td>
+                                                <td class="entityID" width="50" style="width:50px">
+                                                    ##EntityID##
+                                                </td>
+                                                <td>
+                                                    ##FeatureName##
+                                                </td>
+                                            </tr>
+                                            <!-- Developer start-->
+                                            <tr>
+                                                <td class="leftMargin" width="10" style="width:10px">
+                                                    &nbsp;
+                                                </td>
+                                                <td colspan="2">
+                                                    ##DeveloperName##
+                                                </td>
+                                            </tr>
+                                            <!-- Developer End-->
+                                            <!-- Entity Start -->
+                                            <tr class="entity">
+                                                <td class="leftMargin" width="10" style="width:10px">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="entity" colspan="2">
+                                                    <table width="100%" border="1">
+                                                        <tr>
+                                                            <td class="entitytypeimage" width="40" style="width:40px;">
+                                                                <a href="https://targetprocess.aemedia.ru/TargetProcess2/RestUI/Board.aspx?acid=##acid###page=##EntityType##/##entityID##"><img alt="EntityTypeImage" src="http://img.aemedia.ru/tp/##EntityType##.gif" height="12"></a>
+                                                            </td>
+                                                            <td class="entityID" width="50" style="width:50px">
+                                                                ##EntityID##
+                                                            </td>
+                                                            <td>
+                                                                ##EntityName##
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>                                                
+                                            </tr>
+                                            <!-- Entity End -->
+                                        </table>
+                                        <!-- Entity with Feature end -->
                                     </td>
-                                </tr>                                
+                                </tr>
                             </table>
                             <!-- Project end -->
                         </td>
