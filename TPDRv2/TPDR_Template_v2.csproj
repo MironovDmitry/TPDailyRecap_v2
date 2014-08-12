@@ -73,6 +73,10 @@
     <Content Include="Report_Header.html" />
     <Content Include="Section_Footer.html" />
     <Content Include="Section_Header.html" />
+    <Content Include="SummaryEntry.html" />
+    <Content Include="Summary_Footer.html" />
+    <Content Include="Summary_Header.html" />
+    <Content Include="Summary_record.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
